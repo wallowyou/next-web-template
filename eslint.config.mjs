@@ -66,6 +66,12 @@ export default antfu(
     plugins: {
       tailwindcss,
     },
+    settings: {
+      'better-tailwindcss': {
+        // Tailwind v4 CSS entry file so the plugin knows custom tokens
+        entryPoint: 'app/styles/globals.css',
+      },
+    },
     rules: {
       'tailwindcss/enforce-consistent-class-order': 'error',
       'tailwindcss/no-duplicate-classes': 'error',
