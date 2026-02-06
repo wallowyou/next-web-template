@@ -10,7 +10,9 @@
     "lint:fix": "pnpm lint --fix",
     "lint:quiet": "pnpm lint --quiet",
     "lint:report": "pnpm lint --output-file eslint_report.json --format json",
-    "type-check": "tsc --noEmit"
+    "type-check": "tsc --noEmit",
+    "prepare": "husky",
+    "lint-staged": "lint-staged"
   },
   "dependencies": {
     "next": "16.1.6",
@@ -19,6 +21,8 @@
   },
   "devDependencies": {
     "@antfu/eslint-config": "^7.2.0",
+    "@commitlint/cli": "^20.4.1",
+    "@commitlint/config-conventional": "^20.4.1",
     "@eslint-react/eslint-plugin": "^2.9.4",
     "@next/eslint-plugin-next": "^16.1.6",
     "@tailwindcss/postcss": "latest",
@@ -31,8 +35,13 @@
     "eslint-plugin-better-tailwindcss": "^4.1.1",
     "eslint-plugin-react-refresh": "^0.5.0",
     "eslint-plugin-sonarjs": "^3.0.6",
+    "husky": "^9.1.7",
+    "lint-staged": "^16.2.7",
     "postcss": "^8.5.6",
     "tailwindcss": "^4",
     "typescript": "^5"
+  },
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx}": "eslint --cache --fix"
   }
 }
