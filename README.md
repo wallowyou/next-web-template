@@ -34,3 +34,23 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+
+## Create EVN File
+```
+# For production release, change this to PRODUCTION
+NEXT_PUBLIC_DEPLOY_ENV=PRODUCTION
+# The deployment edition, SELF_HOSTED
+NEXT_PUBLIC_EDITION=SELF_HOSTED
+# The base path for the application
+NEXT_PUBLIC_BASE_PATH=
+# The base URL of console application, refers to the Console base URL of WEB service if console domain is
+# different from api or web app domain.
+# example: http://cloud.dify.ai/console/api
+NEXT_PUBLIC_API_PREFIX=/api
+NEXT_PUBLIC_PUBLIC_API_PREFIX=/api
+
+# The API PREFIX for MARKETPLACE
+NEXT_PUBLIC_MARKETPLACE_API_PREFIX=https://marketplace.dify.ai/api/v1
+# The URL for MARKETPLACE
+NEXT_PUBLIC_MARKETPLACE_URL_PREFIX=https://marketplace.dify.ai
+```
