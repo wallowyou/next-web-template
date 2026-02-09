@@ -20,7 +20,7 @@ export default function Home() {
           <h1 className="max-w-xs text-3xl leading-10 font-semibold tracking-tight text-foreground underline">
             To get started, edit the page.tsx file.
           </h1>
-          <div className="text-[var(--theme-primary)]">
+          <div className="text-primary">
             内容
           </div>
 
@@ -63,7 +63,7 @@ export default function Home() {
             Deploy Now
           </a>
           <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-border-muted bg-muted px-5 text-foreground transition-colors hover:bg-background md:w-[158px]"
+            className="flex h-12 w-full items-center justify-center rounded-full border border-border bg-muted px-5 text-foreground transition-colors hover:bg-background md:w-[158px]"
             href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
             target="_blank"
             rel="noopener noreferrer"

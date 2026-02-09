@@ -1,8 +1,0 @@
-/* themes/light.css */
-:root[data-theme='light'] {
-  --theme-bg: #ffffff;
-  --theme-fg: #111827;
-  --theme-primary: #2563eb;
-  --theme-border: #e5e7eb;
-  --theme-muted-bg: #f3f4f6;
-}
