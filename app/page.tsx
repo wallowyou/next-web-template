@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import Spinner from '@/app/components/base/spinner/index'
 import { ThemeToggle } from './ThemeToggle'
 
 export default function Home() {
@@ -21,6 +22,7 @@ export default function Home() {
             To get started, edit the page.tsx file.
           </h1>
           <div className="text-primary">
+            <Spinner></Spinner>
             内容
           </div>
 
