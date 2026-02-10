@@ -1,7 +1,14 @@
 {
   "name": "next-web-template",
+  "type": "module",
   "version": "0.1.0",
   "private": true,
+  "imports": {
+    "#i18n": {
+      "react-server": "./i18n-config/lib.server.ts",
+      "default": "./i18n-config/lib.client.ts"
+    }
+  },
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -17,14 +24,21 @@
     "build-storybook": "storybook build"
   },
   "dependencies": {
+    "@formatjs/intl-localematcher": "^0.8.1",
     "@headlessui/react": "^2.2.9",
     "@serwist/turbopack": "^9.5.5",
     "clsx": "^2.1.1",
+    "es-toolkit": "^1.44.0",
+    "i18next": "^25.8.4",
+    "i18next-resources-to-backend": "^1.2.1",
+    "js-cookie": "^3.0.5",
     "ky": "^1.14.3",
     "lucide-react": "^0.563.0",
+    "negotiator": "^1.0.0",
     "next": "16.1.6",
     "react": "19.2.3",
     "react-dom": "19.2.3",
+    "react-i18next": "^16.5.4",
     "serwist": "^9.5.5",
     "tailwind-merge": "^3.4.0",
     "ufo": "^1.6.3"
@@ -42,6 +56,8 @@
     "@storybook/addon-vitest": "^10.2.7",
     "@storybook/nextjs-vite": "^10.2.7",
     "@tailwindcss/postcss": "latest",
+    "@types/js-cookie": "^3.0.6",
+    "@types/negotiator": "^0.6.4",
     "@types/node": "^20",
     "@types/react": "latest",
     "@types/react-dom": "^19",

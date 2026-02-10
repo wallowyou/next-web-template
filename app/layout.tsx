@@ -1,8 +1,9 @@
 import type { Metadata, Viewport } from 'next'
 import { ThemeProvider } from 'next-themes'
 import { Geist, Geist_Mono } from 'next/font/google'
+import { I18nServerProvider } from '@/app/components/provider/i18n-server'
+import { PWAProvider } from '@/app/components/provider/serwist'
 import { DatasetAttr } from '@/types/feature'
-import { PWAProvider } from './components/provider/serwist'
 import './styles/globals.css'
 
 const geistSans = Geist({
@@ -53,10 +54,11 @@ export default function RootLayout({
             enableSystem
             enableColorScheme
           >
-            {children}
+            <I18nServerProvider>
+              {children}
+            </I18nServerProvider>
           </ThemeProvider>
         </PWAProvider>
-
       </body>
     </html>
   )

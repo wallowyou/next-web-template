@@ -1,0 +1,20 @@
+const data = {
+  languages: [
+    {
+      value: 'en-US',
+      name: 'English (United States)',
+      prompt_name: 'English',
+      example: 'Hello, Dify!',
+      supported: true,
+    },
+    {
+      value: 'zh-Hans',
+      name: '简体中文',
+      prompt_name: 'Chinese Simplified',
+      example: '你好，Dify！',
+      supported: true,
+    },
+  ],
+} as const
+
+export default data
