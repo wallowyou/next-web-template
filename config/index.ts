@@ -1,5 +1,7 @@
 import { DatasetAttr } from '@/types/feature'
 
+export const IS_DEV = process.env.NODE_ENV === 'development'
+export const IS_PROD = process.env.NODE_ENV === 'production'
 const getStringConfig = (
   envVar: string | undefined,
   dataAttrKey: DatasetAttr,
@@ -8,7 +10,7 @@ const getStringConfig = (
   if (envVar)
     return envVar
 
-  const attrValue = globalThis.document?.body?.getAttribute(dataAttrKey)
+  const attrValue = globalThis.document.body?.getAttribute(dataAttrKey)
   if (attrValue)
     return attrValue
   return defaultValue

@@ -1,6 +1,6 @@
 import type { Hooks, SearchParamsOption } from 'ky'
 import ky from 'ky'
-import { API_PREFIX, MARKETPLACE_API_PREFIX, PUBLIC_API_PREFIX } from '@/app/config'
+import { API_PREFIX, MARKETPLACE_API_PREFIX, PUBLIC_API_PREFIX } from '@/config'
 // 超时
 const TIME_OUT = 100000
 export const ContentType = {
